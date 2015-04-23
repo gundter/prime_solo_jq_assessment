@@ -8,6 +8,7 @@ $(document).ready(function(){
        counter++;
        $('.container').append("<div class='row' id="+ counter + ">Line #" + counter + "<button class='colorButton'>Change Color</button><button class='removeButton'>Remove</button></div>");
 
+       //Setting up unique ids for the rows so that I can apply the .hide.slideDown() animation for each row
        var added = $("#" + counter);
        added.hide().slideDown("fast");
    });
